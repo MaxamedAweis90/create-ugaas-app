@@ -1,6 +1,6 @@
 {
   "name": "create-ugaas-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Batteries-included CLI generator for scaffolding web and mobile starters",
   "type": "module",
   "bin": {
@@ -8,17 +8,32 @@
   },
   "files": [
     "dist",
-    "bin"
+    "README.md"
   ],
   "scripts": {
-    "build": "node ./scripts/build.js",
+    "build": "tsup",
     "start": "node ./dist/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaxamedAweis90/create-ugaas-app"
+  },
+  "keywords": [
+    "cli",
+    "create-app",
+    "starter",
+    "react",
+    "expo",
+    "vite",
+    "ugaas"
+  ],
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@clack/prompts": "^1.8.1",
     "degit": "^3.10.0",
     "ora": "^9.4.1",
-    "picocolors": "^1.1.1"
+    "picocolors": "^1.1.1",
+    "tsup": "^8.5.1",
+    "typescript": "^7.0.2"
   }
 }
